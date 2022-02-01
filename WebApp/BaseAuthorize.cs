@@ -15,6 +15,6 @@ public class AccessTokenScopeAttribute : BaseAuthorize
 {
     public HashSet<string> Scopes { get; set; }
 
-    public AccessTokenScopeAttribute(string scope) : base()
+    public AccessTokenScopeAttribute(string scope) : base("")
         => Scopes = new HashSet<string> {scope};
 }
