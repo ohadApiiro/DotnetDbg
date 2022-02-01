@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 
-namespace WebApp;
+namespace WebApp.Security;
 
 public class BaseAuthorize : AuthorizeAttribute
 {
