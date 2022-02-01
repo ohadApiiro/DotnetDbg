@@ -15,9 +15,14 @@ public class WeatherForecastController : ControllerBase
     {
     }
  
-    // [AuthorizeAttribute("")]
-    // [HttpPost("api2")]
-    // public void Api2()
-    // {
-    // }
+    [BaseAuthorize("")]
+    [HttpPost("api2")]
+    public void Api2()
+    {
+    }
+    
+    [HttpPost("api3")]
+    public void ApiNoAuth()
+    {
+    }
 }
